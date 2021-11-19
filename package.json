@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "node_modules/.bin/browser-sync start --server ../../src --no-notify --no-ui --cwd src --files *.html,styles/**/*",
+    "test": "node_modules/.bin/editorconfig-checker",
+    "html": "node_modules/.bin/html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
+    "styles": "node_modules/.bin/postcss ../../src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
+    "build": "npm run html && npm run styles",
+    "serve": "node_modules/.bin/serve",
+    "validator_action": "node_modules/.bin/node-w3c-validator -i ./dist/*.html -f html"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "editorconfig-checker": "^3.1.0",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1",
+    "node-w3c-validator": "^2.0.1"
+  },
+  "dependencies": {
+    "serve": "^13.0.2"
+  }
+}
