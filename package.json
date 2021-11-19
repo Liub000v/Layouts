@@ -7,7 +7,7 @@
     "styles": "node_modules/.bin/postcss ../../src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
     "build": "npm run html && npm run styles",
     "serve": "node_modules/.bin/serve",
-    "validateScript": "npm run htmp && node_modules/.bin/node-w3c-validator -i dist/*.html -f html"
+    "validateScript": "npm run html && node_modules/.bin/node-w3c-validator -i dist/*.html -f html"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
