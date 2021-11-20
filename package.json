@@ -3,7 +3,7 @@
   "scripts": {
     "start": "browser-sync start --server ../../src --no-notify --no-ui --cwd src --files *.html,styles/*",
     "test": "editorconfig-checker",
-    "html-flexbox": "html-minifier --remove-comments --collapse-whitespace --input-dir src/flexbox --output-dir dist/flexbox --file-ext html\"",
+    "html-flexbox": "html-minifier --remove-comments --collapse-whitespace --input-dir src/flexbox --output-dir dist/flexbox --file-ext html",
     "html-grid": "html-minifier --remove-comments --collapse-whitespace --input-dir src/grid --output-dir dist/grid --file-ext html",
     "html": "npm run -s html-flexbox && npm run -s html-grid",
     "styles-flexbox": "postcss  src/flexbox/styles/*.css --use postcss-import --use postcss-csso --no-map --dir dist/flexbox/styles/",
