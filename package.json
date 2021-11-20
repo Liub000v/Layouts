@@ -13,7 +13,7 @@
     "images-grid": "copyfiles -f src/grid/img/* dist/grid/img",
     "images": "npm run -s images-flexbox && npm run -s images-grid",
     "build": "npm run html && npm run styles && npm run images",
-    "serve": "serve",
+    "serve": "serve dist",
     "validateScript": "npm run test"
   },
   "devDependencies": {
