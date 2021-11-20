@@ -1,0 +1,266 @@
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 18px;
+}
+
+.wrapper {
+    max-width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 90px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 70px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: 300;
+}
+strong{
+    font-weight: 700;
+}
+.logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 0;
+    grid-column: 1/span 1;
+}
+
+/*.nav {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(6, 1fr);*/
+/*    grid-column: 4/span 2;*/
+/*    align-items: center;*/
+/*    justify-content: left;*/
+/*    list-style-type: none;*/
+/*    font-size: 20px;*/
+/*    font-weight: 500;*/
+/*    margin: 5px 2px;*/
+/*}*/
+.nav-icon{
+    width: 70px;
+    align-items: center;
+    margin-top:10px;
+    grid-column: 6/span 1;
+}
+
+
+.union {
+    width: 15px;
+    margin-left: 8px;
+    align-items: center;
+}
+
+.opened {
+    height: 1px;
+    color: black;
+    margin-bottom: 3px;
+}
+
+.welcome {
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.topic {
+    font-size: 35px;
+    font-weight: 300;
+    opacity: 0.5;
+    line-height: 24%;
+}
+
+.bg-grey {
+    padding-top: 70px;
+    width: 100%;
+    background-color: #F5F6F7;
+}
+
+
+.block {
+    border-width: 3px;
+    border-color: #F5F6F7;
+    border-radius: 10px;
+    width: 100%;
+}
+.image {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 1/span 6;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-top: 40px;
+}
+
+.category {
+    width: 220px;
+    margin-left: 40px;
+    height: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+#photo {
+    width: 310px;
+    height: 40px;
+    margin-left: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.block-icon {
+    grid-column: 6/span 1;
+    width: 110px;
+    height: 110px;
+    margin-right: 40px;
+    align-content: center;
+    /*padding-top: 8px;*/
+    /*padding-bottom: 14px;*/
+    /*padding-left: 3px;*/
+    background-color: white;
+    border-radius: 20px;
+}
+
+.trash {
+    margin-left: 19px;
+    margin-top: 19px;
+    width: 70px;
+}
+.content {
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.date {
+    margin-left: 40px;
+    font-size: 45px;
+    font-weight: 300;
+    color: #B6BCBF;
+    line-height: 24%;
+}
+
+.block-txt {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.label {
+    font-family: 'Roboto Slab', serif;
+    color: #B6BCBF;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top:0;
+    /*margin-bottom: 60px;*/
+    margin-left: 40px;
+}
+
+
+
+.bg-white {
+    background-color: white;
+}
+
+.footer {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+}
+
+.media-icon {
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 70px;
+    height: 70px;
+}
+
+#end {grid-column: 1/span 3;
+    font-size: 25px;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 1/span 2;
+    align-items: center;
+    justify-content: left;
+    list-style-type: none;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0px 2px;
+}
+.foot2{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 5/span 2;
+    list-style-type: none;
+}
+.foot > li {
+    grid-column: 1/span 2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.foot > li > a {
+    text-decoration: none;
+    color: black;
+}
+.foot2 > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+/*button{*/
+/*    */
+/*}*/
+
