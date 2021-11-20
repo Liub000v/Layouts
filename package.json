@@ -1,19 +1,19 @@
 {
   "private": true,
   "scripts": {
-    "start": "node_modules/.bin/browser-sync start --server ../../src --no-notify --no-ui --cwd src --files *.html,styles/*",
-    "test": "node_modules/.bin/editorconfig-checker",
-    "html-flexbox": "node_modules/.bin/html-minifier --remove-comments --collapse-whitespace --input-dir src/flexbox --output-dir dist/flexbox --file-ext html\"",
-    "html-grid": "node_modules/.bin/html-minifier --remove-comments --collapse-whitespace --input-dir src/grid --output-dir dist/grid --file-ext html",
+    "start": "browser-sync start --server ../../src --no-notify --no-ui --cwd src --files *.html,styles/*",
+    "test": "editorconfig-checker",
+    "html-flexbox": "html-minifier --remove-comments --collapse-whitespace --input-dir src/flexbox --output-dir dist/flexbox --file-ext html\"",
+    "html-grid": "html-minifier --remove-comments --collapse-whitespace --input-dir src/grid --output-dir dist/grid --file-ext html",
     "html": "npm run -s html-flexbox && npm run -s html-grid",
-    "styles-flexbox": "node_modules/.bin/postcss  src/flexbox/styles/*.css --use postcss-import --use postcss-csso --no-map --dir dist/flexbox/styles/",
-    "styles-grid": "node_modules/.bin/postcss  src/grid/styles/*.css --use postcss-import --use postcss-csso --no-map --dir dist/grid/styles/",
+    "styles-flexbox": "postcss  src/flexbox/styles/*.css --use postcss-import --use postcss-csso --no-map --dir dist/flexbox/styles/",
+    "styles-grid": "postcss  src/grid/styles/*.css --use postcss-import --use postcss-csso --no-map --dir dist/grid/styles/",
     "styles": "npm run -s styles-flexbox && npm run -s styles-grid",
-    "images-flexbox": "node_modules/.bin/copyfiles -f src/flexbox/img/* dist/flexbox/img",
-    "images-grid": "node_modules/.bin/copyfiles -f src/grid/img/* dist/grid/img",
+    "images-flexbox": "copyfiles -f src/flexbox/img/* dist/flexbox/img",
+    "images-grid": "copyfiles -f src/grid/img/* dist/grid/img",
     "images": "npm run -s images-flexbox && npm run -s images-grid",
     "build": "npm run html && npm run styles && npm run images",
-    "serve": "node_modules/.bin/serve src",
+    "serve": "serve",
     "validateScript": "npm run test"
   },
   "devDependencies": {
